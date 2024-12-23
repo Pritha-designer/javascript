@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body{
+        background-color: rgb(104, 104, 104);
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: larger;
+       
+    }
+      
+       
+    .col1{
+        width:40%;
+        height:600px;
+        display:flex;
+        float:left;
+        
+        justify-content: center;
+        margin-left: 10px;
+        background-color:limegreen;
+    }
+   .col2{
+        
+        display:flex;
+    
+    }
+    
+    input{
+    height: 20px;
+}
+h2,h5{
+    color: white;
+}
+#btn,#reset{
+    width:90px;
+    height: 30px;  
+    background-color: ghostwhite;
+    border-radius: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:large;
+    border: none;
+}
+</style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box">
+            <div class="col1">
+                <form id="calbmi" method="post" onsubmit="return false">
+                    <br><br><br><br><br>
+                        <h2 align="center"> Know Your BMI</h2>
+                        <table>
+                        <tr>
+                            <td><label for="Username">Name </label></td>
+                            <td><input type="text" id="name" name="" required></td>
+                        </tr>
+                      
+                        <tr>
+                        <td><label for="Userage">Age</label></td>
+                        <td><input type="text" id="age" name="" placeholder="between 2-120 yrs" required></td>
+                        </tr>
+                     
+                        <tr>
+                        <td><label for="Usergender">Gender</label></td>
+                        <td><input type="radio" id="male" name="gender">Male
+                        <input type="radio" id="female" name="gender">Female
+                        </td>
+                        </tr>
+                       
+                        <tr>
+                        <td><label for="Userwgt">Weight in Kgs &nbsp;&nbsp;</label></td>
+                        <td><input type="text" id="Weight" name="" required></td>
+                        </tr>
+                        
+                        <tr>
+                        <td><label for="Userhght">Height in Cm  &nbsp;&nbsp; </label></td>
+                        <td><input type="text" id="Height" name="" required></td>
+                        </tr>   
+                    </table>
+                    <br>
+                    <table>
+                    <tr>
+                        <td><button id="btn" onclick="calcBMI()">Calculate</button></td>
+                        <td><input type="reset" id="reset"></td>
+                        </tr>
+                    </table>
+
+                        <h5 id="report"></h5>
+                        
+                </form>
+            </div>
+                    <div class="col2">
+                      <img src="./fitness.jpg"  alt="" width="780" height="600">  
+                    </div>
+            
+        </div>
+    </div>
+
+
+    <script src="bmi.js"></script>
+</body>
+
+</html>
