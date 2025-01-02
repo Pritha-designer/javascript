@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+    font-size: large;
+}
+
+body
+{
+   height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkkhaki;
+}
+
+.calculator{
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    border-color: #000;
+    border-width: 2px;
+    border-style: solid;
+    background-color: #000;
+}
+
+#result{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    width: 387px;
+    height: 50px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    background: hsl(0, 1%, 27%);
+    color:hsl(0, 0%, 100%);
+}
+.keys{
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    
+}
+
+button{
+    display: flex;
+    width: 99px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    border-color: #000;
+    border-width: 4px;
+    border-radius: 10px;
+    border-style: solid;
+    background: hsl(0, 3%, 81%);
+    cursor: pointer;
+}
+button:active
+{
+    background-color:whitesmoke;
+}
+
+button:nth-child(4),button:nth-child(8),button:nth-child(12),button:nth-child(16),button:nth-child(19)
+{
+    background: #fc8b0a;
+    color: white;
+}
+button:nth-child(17)
+{
+    flex-grow: 2;
+}
+button:nth-child(1){
+    color:white;
+    background-color: red;
+}
+button:nth-child(1):active{ background-color:rgb(255, 88, 59);}
+button:nth-child(4):active,button:nth-child(8):active,button:nth-child(12):active,button:nth-child(16):active,button:nth-child(19):active
+{
+    background-color: #f8a03b;
+}
