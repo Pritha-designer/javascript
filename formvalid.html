@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="frmstyle.css" type="text/css">
+</head>
+
+<body>
+    <div class="container">
+        <br>
+        <form class="row g-3" action="frmsuccess.html" onsubmit="return validate()">
+
+            <div class="col-md-12">
+                <label for="name">User Name</label>
+                <input type="text" class="form-control" id="name" value="" placeholder="enter your name">
+                <span id="name-error" class="error-message">
+            </div>
+
+            <div class="col-md-12">
+                <label for="email">Email</label>
+                <input type="text" class="form-control" id="email" value="" placeholder="enter your email id">
+                <span id="email-error" class="error-message"></span>
+            </div>
+
+            <div class="col-md-12">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="pwd" value="" placeholder="enter your password">
+                <span id="pwd-error" class="error-message"></span>
+            </div>
+
+
+            <div class="col-12">
+                <label for="address">Address</label>
+                <input type="text" class="form-control" id="address" value="" placeholder="enter your address">
+                <span id="address-error" class="error-message"></span>
+            </div>
+
+            <div class="col-12">
+                <label for="phone">Phone</label>
+                <input type="text" class="form-control" id="phone" value="" placeholder="enter your phone">
+                <span id="phone-error" class="error-message"></span>
+            </div>
+            <div>
+                <button type="submit" class="loginbtn">Sign Up</button>
+            </div>
+
+            <div>
+                <p align="center">Already have an account? <a href="frmlogin.html">Login</a>
+            </div>
+            </p>
+        </form>
+    </div>
+    <script src="frmscript.js"></script>
+</body>
+
+</html>
