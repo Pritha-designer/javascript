@@ -1,0 +1,78 @@
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+}
+@font-face
+{
+    font-family: 'Technology';
+    src: url('F:\htmlb16\assignment\Technology.ttf');
+}
+body
+{
+    background-image: url(./bgck.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.clock
+{
+    margin-left: 35%;
+    margin-top: 22%;
+    padding: 10px;
+    width: 560px;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    border-radius: 35px;
+    border-style: outset;
+    background: linear-gradient(135deg, #575555 0%,#e6e4e4 50%,#575555 100%);
+    box-shadow: 5px 5px 1px 2px rgba(0, 0, 0, 0.2);
+
+}
+
+.time
+{
+height:180px;
+width:155px;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: large;
+background-color: rgb(0, 0, 0);
+color:rgb(33, 235, 26);
+border-radius: 10px;
+letter-spacing: 10px;
+font-size: 7em;
+font-family: 'Technology', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.btn{
+    margin-left: 56%;
+    padding-top: 10px;
+
+}
+
+button{
+    height:40px;
+    width:100px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    background-color:bisque;
+    color:rgb(0, 0, 0);
+    border-radius: 15px;
+}
+.day{
+    height:180px;
+    width:50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    border-radius: 10px;
+    font-size: 3em;
+    font-family: 'Technology', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 3px;
+}
+
